@@ -25,15 +25,25 @@ public class Numbers {
         num_2= s.nextInt();
         System.out.println("Enter Third number");
         num_3= s.nextInt();
-        if (num_1 > num_2){
-            System.out.println("Max num is : "+num_1);
+        if (num_1 > num_2 && num_1 > num_3){
+            System.out.println("Max num is : " +num_1);
         }
-        else if (num_3 < num_2){
-            System.out.println("Max num is : "+num_2);
+      else if (num_2 > num_1 && num_2 > num_3){
+            System.out.println("Max num is : " +num_2);
         }
-        else {
-            System.out.println("Min num is : "+num_3);
+      else if (num_3 > num_2 && num_3 > num_1){
+            System.out.println("Max num is : " +num_3);
         }
+        else if (num_1 < num_2 && num_1 < num_3){
+            System.out.println("Min num is : " +num_1);
+        }
+        else if (num_2 < num_3 && num_2 < num_1){
+            System.out.println("Min num is : " +num_2);
+        }
+        else  {
+            System.out.println("Min num is : " +num_3);
+        }
+        
          
     }
     
